@@ -1,13 +1,30 @@
 
 import Promise from "./Promise/Promise.jsx";
-function App() {
- return(
-  <div>
-   
-     <Promise/>
+import Trusted from "./Trusted/Trusted.jsx";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Four0Four from "./404-component/Four0Four.jsx";
+import UseState from "./UseCase1/UseState1.jsx";
+import UsestateformComponent from "./UseState2/UseState2.jsx";
 
-    </div>
- );
+function App() {
+   return (
+      // <Routes>
+      //    <Route path="/" element={<Promise />} />
+      //    <Route path="/leetcode" element={<Outlet />}>
+      //       <Route index element={<Trusted />} />
+      //       <Route path="happy" element={<Promise />} />
+      //       {/* <Route path="hi" element={<Trusted />} /> */}
+      //    </Route>
+      //    <Route path="*" element={<Four0Four/>}/>
+      // </Routes>
+
+
+   <Routes>
+      {/* <Route path="/" element={<UseState/>} /> */}
+      {/* <Route path="/" element={<UseState/>} /> */}
+       <Route path="/UsestateformComponent" element={<UsestateformComponent />} />
+   </Routes>
+   );
 }
 
-export default App
+export default App;
