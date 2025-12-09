@@ -7,6 +7,7 @@ import UseState from "./UseCase1/UseState1.jsx";
 import UsestateformComponent from "./UseState2/UseState2.jsx";
 import RegisterApp from "./Promise/LMS/Lms.jsx";
 import UseEffectPracticeTwo from "./UseEffect/Useeffect.jsx";
+import FetchApi2 from "./UseEffect/UseEffect2.jsx";
 
 function App() {
    return (
@@ -28,6 +29,8 @@ function App() {
        {/* <Route path="/RegisterApp" element={<RegisterApp/>}/> */}
        {/* <Route path="/FetchApi" element={<FetchApi/>}/> */}
        <Route path="/Useeffect" element={<UseEffectPracticeTwo/>}/>
+       <Route path="/FetchApi2" element={<FetchApi2/>}/>
+
 
    </Routes>
    );
